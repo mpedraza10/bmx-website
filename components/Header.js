@@ -18,27 +18,29 @@ const Header = () => {
 
 	return (
 		<header className={styles.header}>
-			<Image src={logo} alt="Logo" className={styles.logo} />
-			<nav className={`${styles.menu} ${menuOpened ? styles.show : ""}`}>
-				<ul>
-					<li>
-						<Link href={"/capacitacion"}>Capacitación</Link>
-					</li>
-					<li>
-						<Link href={"/registro"}>Registro</Link>
-					</li>
-				</ul>
-			</nav>
-			<div className={styles.hamburgerMenu} onClick={toggleMenu}>
-				<div
-					className={`${styles.bar} ${menuOpened ? styles.change : ""}`}
-				></div>
-				<div
-					className={`${styles.bar} ${menuOpened ? styles.change : ""}`}
-				></div>
-				<div
-					className={`${styles.bar} ${menuOpened ? styles.change : ""}`}
-				></div>
+			<div className={styles.rectangle}>
+				<Image src={logo} alt="Logo" className={styles.logo} />
+				<nav className={`${styles.menu} ${menuOpened ? styles.show : ""}`}>
+					<ul>
+						<li>
+							<Link href={"/capacitacion"}>Capacitación</Link>
+						</li>
+						<li>
+							<Link href={"/registro"}>Registro</Link>
+						</li>
+					</ul>
+				</nav>
+				<div className={styles.hamburgerMenu} onClick={toggleMenu}>
+					<div
+						className={`${styles.bar} ${menuOpened ? styles.change : ""}`}
+					></div>
+					<div
+						className={`${styles.bar} ${menuOpened ? styles.change : ""}`}
+					></div>
+					<div
+						className={`${styles.bar} ${menuOpened ? styles.change : ""}`}
+					></div>
+				</div>
 			</div>
 		</header>
 	);

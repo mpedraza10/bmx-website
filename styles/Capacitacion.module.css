@@ -5,39 +5,42 @@
 }
 
 .sidebar {
-	width: 200px;
-	padding: 20px;
+	width: 30%;
+	padding: 20px 20px 0 0;
 	border-right: 1px solid #ccc;
 	height: 100%;
 	position: fixed;
 	top: var(--header-height);
 	left: 0;
 	overflow-y: auto;
-    z-index: 1;
+	z-index: 1;
+	background-color: #c8d8d3;
 }
 
 .tab {
 	cursor: pointer;
-	padding: 10px;
-	margin-bottom: 10px;
+	padding: 1.5rem;
+	margin-bottom: 1rem;
 	border-radius: 5px;
 	transition: background-color 0.3s ease;
 }
 
 .tab:hover {
-	background-color: #f0f0f0;
+	background-color: #d1e0ed;
 }
 
 .tab.active {
-	background-color: #f0f0f0;
+	background-color: #d1e0ed;
 	font-weight: bold;
 }
 
 .content {
-	flex: 1;
-	padding: 1rem 20px;
-	padding-left: 220px;
 	position: relative;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-left: 30%;
 }
 
 .video-player {
@@ -50,7 +53,10 @@
 }
 
 .notes {
-	background-color: #f9f9f9;
 	padding: 20px;
 	border-radius: 5px;
+}
+
+.notes h2 {
+	margin-bottom: 1rem;
 }

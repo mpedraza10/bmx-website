@@ -16,7 +16,7 @@ const contents = [
 		name: "Cuya drag",
 		videoSrc: "cuyadrag.mp4",
 		notas:
-			"Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final.",
+			"La historia de Emilia la cuya drag, una joven promesa del padel amante del padel que va por la vida comiendo aniamles exóticos.\n\nAmericanista vapeadora podría ser una de sus descripciones pero la que más le gusta es la Cuya Drag.",
 	},
 	{
 		id: 2,
@@ -84,8 +84,8 @@ const Capacitacion = () => {
 								</video>
 							</div>
 							<div className={styles.notes}>
-								<h2>Notes</h2>
-								<p>{selectedCourse.notas}</p>
+								<h2>Notas adicionales</h2>
+								<pre>{selectedCourse.notas}</pre>
 							</div>
 						</div>
 					</div>

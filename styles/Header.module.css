@@ -8,13 +8,22 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
+	background-color: #c8d8d3;
+}
+
+.rectangle {
 	background-color: #697cac;
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	border-radius: 0px 50px 50px 0px;
 }
 
 .logo {
 	width: 150px;
 	height: auto;
+    object-fit: contain;
 }
 
 .menu {
@@ -80,9 +89,9 @@
 }
 
 @media screen and (min-width: 768px) {
-    .header {
-        padding: 0 2rem;
-    }
+	.rectangle {
+		padding: 0 2rem;
+	}
 
 	.hamburgerMenu {
 		display: none;
@@ -94,10 +103,10 @@
 		position: relative;
 		top: auto;
 		height: var(--header-height);
-        width: auto;
+		width: auto;
 	}
 
-    .menu ul {
-        flex-direction: row;
-    }
+	.menu ul {
+		flex-direction: row;
+	}
 }
