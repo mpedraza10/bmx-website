@@ -6,7 +6,7 @@
 
 .sidebar {
 	width: 30%;
-	padding: 20px 20px 0 0;
+	padding: 20px;
 	border-right: 1px solid #ccc;
 	height: 100%;
 	position: fixed;
@@ -14,7 +14,7 @@
 	left: 0;
 	overflow-y: auto;
 	z-index: 1;
-	background-color: #c8d8d3;
+	background-color: white;
 }
 
 .tab {
@@ -23,6 +23,7 @@
 	margin-bottom: 1rem;
 	border-radius: 5px;
 	transition: background-color 0.3s ease;
+	border-bottom: 1px solid rgb(197, 197, 197);
 }
 
 .tab:hover {
@@ -32,6 +33,7 @@
 .tab.active {
 	background-color: #d1e0ed;
 	font-weight: bold;
+	border-left: 2px solid #697cac;
 }
 
 .content {
@@ -41,6 +43,13 @@
 	display: flex;
 	flex-direction: column;
 	padding-left: 30%;
+	background-color: #fbfbfb;
+	min-height: 100vh;
+}
+
+.title {
+	padding: 20px;
+	margin-bottom: 2rem;
 }
 
 .video-player {
@@ -54,7 +63,6 @@
 
 .notes {
 	padding: 20px;
-	border-radius: 5px;
 }
 
 .notes h2 {

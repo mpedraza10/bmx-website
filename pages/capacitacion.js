@@ -85,7 +85,7 @@ const Capacitacion = () => {
 							</div>
 							<div className={styles.notes}>
 								<h2>Notas adicionales</h2>
-								<pre>{selectedCourse.notas}</pre>
+								<p>{selectedCourse.notas}</p>
 							</div>
 						</div>
 					</div>
