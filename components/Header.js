@@ -25,9 +25,6 @@ const Header = () => {
 						<li>
 							<Link href={"/capacitacion"}>Capacitación</Link>
 						</li>
-						<li>
-							<Link href={"/registro"}>Registro</Link>
-						</li>
 					</ul>
 				</nav>
 				<div className={styles.hamburgerMenu} onClick={toggleMenu}>

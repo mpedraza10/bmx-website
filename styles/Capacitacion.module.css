@@ -24,6 +24,37 @@
 	border-radius: 5px;
 	transition: background-color 0.3s ease;
 	border-bottom: 1px solid rgb(197, 197, 197);
+	position: relative;
+}
+
+.btnCont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.registerBtn {
+	padding: 1rem 1.5rem;
+	background-color: var(--dark-blue-color);
+	border-radius: 20px;
+	color: white;
+}
+
+.registerBtn:hover {
+	background-color: var(--hover-blue-color);
+}
+
+.watched {
+	background-color: green;
+	border-radius: 50%;
+	padding: 0.2rem;
+	position: absolute;
+	right: 1rem;
+}
+
+.watched svg {
+	width: 12px;
+	color: white;
 }
 
 .tab:hover {
@@ -33,7 +64,7 @@
 .tab.active {
 	background-color: #d1e0ed;
 	font-weight: bold;
-	border-left: 2px solid #697cac;
+	border-left: 5px solid #697cac;
 }
 
 .content {
@@ -45,6 +76,34 @@
 	padding-left: 30%;
 	background-color: #fbfbfb;
 	min-height: 100vh;
+}
+
+.instructions {
+	padding: 2rem;
+}
+
+.instructions h2 {
+	margin-bottom: 1rem;
+}
+
+.instructions .desc1 {
+	margin-bottom: 2rem;
+}
+
+.instructions .desc2 {
+	margin-bottom: 1rem;
+}
+
+.instructions ul {
+	list-style: none;
+}
+
+.instructions ul li {
+	margin-bottom: 1rem;
+}
+
+.instructions ul li p {
+	margin-bottom: 1rem;
 }
 
 .title {

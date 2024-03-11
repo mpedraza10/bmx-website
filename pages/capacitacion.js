@@ -2,35 +2,45 @@
 import Head from "next/head";
 
 // React imports
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // Components
 import Header from "@/components/Header";
 
 // Styles
 import styles from "@/styles/Capacitacion.module.css";
+import Link from "next/link";
 
 const contents = [
 	{
 		id: 1,
+		name: "Instrucciones",
+		videoSrc: "",
+		notas: "",
+	},
+	{
+		id: 2,
 		name: "Cuya drag",
 		videoSrc: "cuyadrag.mp4",
 		notas:
 			"La historia de Emilia la cuya drag, una joven promesa del padel amante del padel que va por la vida comiendo aniamles exóticos.\n\nAmericanista vapeadora podría ser una de sus descripciones pero la que más le gusta es la Cuya Drag.",
+		watched: false,
 	},
 	{
-		id: 2,
+		id: 3,
 		name: "IrisAna",
 		videoSrc: "hondu.mp4",
 		notas:
 			"Lorem 2 ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final.",
+		watched: false,
 	},
 	{
-		id: 3,
+		id: 4,
 		name: "Pedrazon",
 		videoSrc: "raya.mp4",
 		notas:
 			"Lorem 3 ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final.",
+		watched: false,
 	},
 ];
 
@@ -38,12 +48,32 @@ const Capacitacion = () => {
 	// State to track the active tab
 	const [activeTab, setActiveTab] = useState(contents[0].name);
 	const [selectedCourse, setSelectedCourse] = useState(contents[0]);
+	const [contentsState, setContentsState] = useState(contents);
+	const [videosWatched, setVideosWatched] = useState(0);
+	const [allVideosWatched, setAllVideosWatched] = useState(false);
 
 	// Function to handle tab click
 	const handleTabClick = (content) => {
 		setSelectedCourse(content);
 		setActiveTab(content.name);
 	};
+
+	// Function to handle played videos
+	const handlePlay = () => {
+		const updatedContents = contentsState.map((content) => {
+			if (content.id === selectedCourse.id && !content.watched) {
+				return { ...content, watched: true };
+			}
+			return content;
+		});
+
+		setVideosWatched((prev) => (prev += 1));
+		setContentsState(updatedContents);
+	};
+
+	useEffect(() => {
+		if (videosWatched === contentsState.length - 1) setAllVideosWatched(true);
+	}, [videosWatched]);
 
 	return (
 		<>
@@ -57,7 +87,7 @@ const Capacitacion = () => {
 				<section>
 					<div className={styles["course-layout"]}>
 						<div className={styles.sidebar}>
-							{contents.map((content) => (
+							{contentsState.map((content) => (
 								<div
 									key={content.id}
 									className={`${styles.tab} ${
@@ -66,27 +96,114 @@ const Capacitacion = () => {
 									onClick={() => handleTabClick(content)}
 								>
 									{content.name}
+									{content.watched && (
+										<span className={styles.watched}>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												strokeWidth={1.5}
+												stroke="currentColor"
+												className="w-6 h-6"
+											>
+												<path
+													strokeLinecap="round"
+													strokeLinejoin="round"
+													d="m4.5 12.75 6 6 9-13.5"
+												/>
+											</svg>
+										</span>
+									)}
 								</div>
 							))}
+							{allVideosWatched && (
+								<div className={styles.btnCont}>
+									<Link href="/registro" className={styles.registerBtn}>
+										¡Registrate!
+									</Link>
+								</div>
+							)}
 						</div>
 						<div className={styles.content}>
 							<div className={styles["video-player"]}>
-								<video
-									key={selectedCourse.name}
-									className={styles.videoControl}
-									controls
-								>
-									<source
-										src={`/videos/${selectedCourse.videoSrc}`}
-										type="video/mp4"
-									/>
-									Your browser does not support the video tag.
-								</video>
+								{selectedCourse.videoSrc === "" ? (
+									<div className={styles.instructions}>
+										<h2>Instrucciones para el Registro como Voluntario: </h2>
+										<p className={styles.desc1}>
+											¡Gracias por tu interés en unirte como voluntario al Banco
+											de Alimentos Cáritas de Monterrey!
+										</p>
+										<p className={styles.desc2}>
+											Para completar tu registro como voluntario, por favor
+											sigue estos sencillos pasos:
+										</p>
+										<ul>
+											<li>
+												<h4>Paso 1: Visualización de Videos Informativos</h4>
+												<p>
+													Antes de proceder con tu registro, es importante que
+													te familiarices con nuestro trabajo y los protocolos
+													de voluntariado. Para ello, te pedimos que veas todos
+													los videos informativos disponibles en nuestro sitio
+													web.
+												</p>
+												<p>
+													Estos videos proporcionarán información crucial sobre
+													nuestras actividades, procedimientos de seguridad y el
+													impacto de nuestro trabajo en la comunidad.
+												</p>
+											</li>
+											<li>
+												<h4>Paso 2: Registro en Línea</h4>
+												<p>
+													Una vez hayas visto todos los videos, regresa a esta
+													página y completa el formulario de registro en línea.
+													Asegúrate de proporcionar información precisa y
+													completa en el formulario.
+												</p>
+											</li>
+											<li>
+												<h4>Paso 3: Confirmación de Registro</h4>
+												<p>
+													Después de enviar tu formulario de registro, nuestro
+													equipo revisará tu solicitud y te contactará para
+													confirmar tu registro como voluntario.
+												</p>
+												<p>
+													Recuerda que tu participación como voluntario es
+													fundamental para nuestro trabajo y para ayudar a
+													quienes más lo necesitan en Monterrey. ¡Gracias por tu
+													compromiso y apoyo!
+												</p>
+												<p>
+													Si tienes alguna pregunta o necesitas ayuda durante el
+													proceso de registro, no dudes en contactarnos.
+												</p>
+												<p>¡Esperamos contar contigo en nuestro equipo!</p>
+											</li>
+										</ul>
+									</div>
+								) : (
+									<video
+										key={selectedCourse.name}
+										className={styles.videoControl}
+										controls
+										onPlay={handlePlay}
+									>
+										<source
+											src={`/videos/${selectedCourse.videoSrc}`}
+											type="video/mp4"
+										/>
+										Your browser does not support the video tag.
+									</video>
+								)}
 							</div>
-							<div className={styles.notes}>
-								<h2>Notas adicionales</h2>
-								<p>{selectedCourse.notas}</p>
-							</div>
+							{selectedCourse.videoSrc !== "" && (
+								<div className={styles.notes}>
+									<h2>Notas adicionales</h2>
+									<p>{selectedCourse.notas}</p>
+								</div>
+							)}
 						</div>
 					</div>
 				</section>
