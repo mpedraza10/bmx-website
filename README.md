@@ -1,40 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Demo website
 
-## Getting Started
-
-First, run the development server:
+Si desea probar el código de manera local se debe clonar el repositorio en alguna carpeta de su equipo para posteriormente correr los comandos:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Se abrirá en [http://localhost:3000](http://localhost:3000) para ver los resultados.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Notas
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Un sitio web diseñado específicamente para capacitar al personal en la clasificación de frutas y verduras puede proporcionar una serie de beneficios significativos para un banco de alimentos. Al brindar acceso a recursos educativos, videos instructivos y guías detalladas sobre la identificación y clasificación adecuada de productos frescos, el personal puede adquirir rápidamente las habilidades necesarias para llevar a cabo estas tareas de manera eficiente. Esto no solo reduce el tiempo dedicado a la capacitación presencial, sino que también garantiza una mayor consistencia y precisión en el proceso de clasificación. Además, al permitir que el personal acceda a la capacitación en cualquier momento y desde cualquier lugar, el sitio web facilita la actualización continua de habilidades y conocimientos, lo que contribuye aún más a mejorar la eficacia y la calidad del trabajo en el banco de alimentos.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<b>Integrantes:</b><br>
+Miguel Pedraza  A01284469<br>
+Anairis Navarro Montero A01660377<br>
+Francisco Rivera A00825344<br>
+Natalia Bobadilla Ortiz A0829792<br>
+Maria Emilia Cevallos A01284470<br>
+Gabriel Maiz Elizondo A01721500<br>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Video
+![Grabación de pantalla 2024-03-11 a las 4 23 37 p m](https://github.com/mpedraza10/bmx-website/assets/63821607/bee72e31-1cd8-4b6d-b584-fd14389b1e54)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
