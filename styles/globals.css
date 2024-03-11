@@ -1,6 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* --------------------------------------- Variables --------------------------------------- */
 :root {
@@ -9,13 +8,15 @@
 
 	/* Colors */
 	--orange-color: #ff8300;
+	--dark-blue-color: #697cac;
+	--hover-blue-color: hsl(223, 29%, 40%);
+	--light-blue-color: #d1e0ed;
 	--body-color: #010101;
 	--nav-color: #101010;
 	--light-grey-color: #f8f7f9;
 
 	/* Font family */
-	--body-font: "Inter", sans-serif;
-	/* font-family: "Kumbh Sans", sans-serif; */
+	--body-font: "Open Sans", sans-serif;
 
 	/* Font sizes */
 	--big-font-size: 3rem;
