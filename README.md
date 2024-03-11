@@ -22,4 +22,3 @@ Maria Emilia Cevallos A01284470<br>
 Gabriel Maiz Elizondo A01721500<br>
 
 ## Video
-https://youtu.be/po58ul7xNdE
