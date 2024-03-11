@@ -22,5 +22,4 @@ Maria Emilia Cevallos A01284470<br>
 Gabriel Maiz Elizondo A01721500<br>
 
 ## Video
-![Grabación de pantalla 2024-03-11 a las 4 23 37 p m](https://github.com/mpedraza10/bmx-website/assets/63821607/bee72e31-1cd8-4b6d-b584-fd14389b1e54)
-
+https://youtu.be/po58ul7xNdE
