@@ -1,13 +1,7 @@
 ## Demo website
 
-Si desea probar el código de manera local se debe clonar el repositorio en alguna carpeta de su equipo para posteriormente correr los comandos:
-
-```bash
-npm install
-npm run dev
-```
-
-Se abrirá en [http://localhost:3000](http://localhost:3000) para ver los resultados.
+## Link
+https://voluntarioscaritas.netlify.app/
 
 ## Notas
 
@@ -23,3 +17,13 @@ Gabriel Maiz Elizondo A01721500<br>
 
 ## Video
 https://youtu.be/u3i5K55cJVE
+
+## Run code
+Si desea probar el código de manera local se debe clonar el repositorio en alguna carpeta de su equipo para posteriormente correr los comandos:
+
+```bash
+npm install
+npm run dev
+```
+
+Se abrirá en [http://localhost:3000](http://localhost:3000) para ver los resultados.
