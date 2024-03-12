@@ -65,7 +65,7 @@ const Registro = () => {
 						</p>
 						<a
 							className={styles.btn}
-							href="https://docs.google.com/forms/d/e/1FAIpQLSeXHPVgXnz0Btv-RJR_2tn9mVQ48uwtUy8iw2sRZ2i278n80Q/viewform"
+							href="https://docs.google.com/forms/d/e/1FAIpQLSeXHPVgXnz0Btv-RJR_2tn9mVQ48uwtUy8iw2sRZ2i278n80Q/viewform?usp=sf_link"
 							target="_blank"
 						>
 							Registro de voluntarios
