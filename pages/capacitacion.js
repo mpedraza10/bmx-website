@@ -20,26 +20,18 @@ const contents = [
 	},
 	{
 		id: 2,
-		name: "Cuya drag",
-		videoSrc: "cuyadrag.mp4",
+		name: "Inocuidad Alimentaria",
+		videoSrc: "INOCUIDAD_ALIMENTARIA.mp4",
 		notas:
-			"La historia de Emilia la cuya drag, una joven promesa del padel amante del padel que va por la vida comiendo aniamles exóticos.\n\nAmericanista vapeadora podría ser una de sus descripciones pero la que más le gusta es la Cuya Drag.",
+			"Video de capacitación sobre inocuidad alimentaria que está diseñado para proporcionar a los voluntarios del Banco de Alimentos conocimientos esenciales para garantizar la seguridad y calidad de los alimentos distribuidos a diversas personas de escasos recursos. Asimismo, se abordarán distintos tipos de contaminación que pueden afectar los alimentos.",
 		watched: false,
 	},
 	{
 		id: 3,
-		name: "IrisAna",
-		videoSrc: "hondu.mp4",
+		name: "Aceptación y rechazo de alimentos",
+		videoSrc: "ACEPTACION_FYV.mp4",
 		notas:
-			"Lorem 2 ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final.",
-		watched: false,
-	},
-	{
-		id: 4,
-		name: "Pedrazon",
-		videoSrc: "raya.mp4",
-		notas:
-			"Lorem 3 ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final.",
+			"Aprende a tomar decisiones informadas sobre aceptación y rechazo de las frutas, verduras y alimentos considerando cuidadosamente las características de cada producto en el entorno de banco de alimentos con el objetivo de mejorar la gestión de calidad y asegurar la distribución de alimentos frescos y en buen estado",
 		watched: false,
 	},
 ];
