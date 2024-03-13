@@ -54,12 +54,11 @@ const Capacitacion = () => {
 	const handlePlay = () => {
 		const updatedContents = contentsState.map((content) => {
 			if (content.id === selectedCourse.id && !content.watched) {
+				setVideosWatched((prev) => (prev += 1));
 				return { ...content, watched: true };
 			}
 			return content;
 		});
-
-		setVideosWatched((prev) => (prev += 1));
 		setContentsState(updatedContents);
 	};
 
